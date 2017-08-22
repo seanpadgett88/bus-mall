@@ -10,15 +10,6 @@ function Image(name, path) {
   renderedImgs.push(this);
 };
 
-var imageMaker = function(obj) {
-  var anchor = document.getElementById('imgs-here');
-  var imageTag = document.createElement('img');
-  imageTag.setAttribute('name', obj.name);
-  imageTag.setAttribute('src', obj.path);
-  imageTag.id = obj.id;
-  anchor.appendChild(imageTag);
-};
-
 var bag = new Image('bag', 'Images/bag.jpg');
 var banana = new Image('banana', 'Images/banana.jpg');
 var bathroom = new Image('bathroom','Images/bathroom.jpg');
@@ -40,8 +31,25 @@ var usb = new Image('usb','Images/usb.gif');
 var waterCan = new Image('watercan','Images/water-can.jpg');
 var wineGlass = new Image('wineglass','Images/wine-glass.jpg');
 
+var prodArray = [bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dogDuck, dragon, pen, petSweep, scissors, shark, sweep, tauntaun, unicorn, usb, waterCan, wineGlass];
+  while (i < 3) {
+    Math.floor(Math.random() * prodArray.length);
+    if (!prodArray[i] && !usedArray[i]);
+    usedArray.push[i];
+    if 
+
+  }
+
+var imageMaker = function(obj) {
+  var anchor = document.getElementById('imgs-here');
+  var imageTag = document.createElement('img');
+  imageTag.setAttribute('src', obj.path);
+  imageTag.setAttribute('id', obj.id);
+  anchor.appendChild(imageTag);
+};
 usedArray = [];
 for (var i = 0; i < 3; i++) {
+
   usedArray.push(renderedImgs[i]);
   imageMaker(renderedImgs[i]);
 }
