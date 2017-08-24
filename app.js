@@ -1,7 +1,7 @@
 'use strict';
 
 var totalClicks = 0;
-var maxClicks = 5;
+var maxClicks = 25;
 
 var names = ['bag', 'banana', 'bathroom', 'boots', 'breakfast', 'bubblegum', 'chair', 'cthulhu', 'dog-duck', 'dragon', 'pen', 'pet-sweep', 'scissors', 'shark', 'sweep', 'tauntaun', 'unicorn', 'usb', 'water-can', 'wine-glass'];
 var paths = ['Images/bag.jpg', 'Images/banana.jpg', 'Images/bathroom.jpg', 'Images/boots.jpg', 'Images/breakfast.jpg', 'Images/bubblegum.jpg', 'Images/chair.jpg', 'Images/cthulhu.jpg', 'Images/dog-duck.jpg', 'Images/dragon.jpg', 'Images/pen.jpg', 'Images/pet-sweep.jpg', 'Images/scissors.jpg', 'Images/shark.jpg', 'Images/sweep.png', 'Images/tauntaun.jpg', 'Images/unicorn.jpg', 'Images/usb.gif', 'Images/water-can.jpg', 'Images/wine-glass.jpg'];
