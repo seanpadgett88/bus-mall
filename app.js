@@ -1,7 +1,7 @@
 'use strict';
 
-var renderedImgs = [];
-var usedArray = [];
+
+
 function Image(name, path) {
   this.name = name;
   this.path = path;
@@ -31,25 +31,41 @@ var usb = new Image('usb','Images/usb.gif');
 var waterCan = new Image('watercan','Images/water-can.jpg');
 var wineGlass = new Image('wineglass','Images/wine-glass.jpg');
 
-var prodArray = [bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dogDuck, dragon, pen, petSweep, scissors, shark, sweep, tauntaun, unicorn, usb, waterCan, wineGlass];
-  while (i < 3) {
-    Math.floor(Math.random() * prodArray.length);
-    if (!prodArray[i] && !usedArray[i]);
-    usedArray.push[i];
-    if 
+var productArray = [bag, banana, bathroom, boots, breakfast, bubblegum, chair, cthulhu, dogDuck, dragon, pen, petSweep, scissors, shark, sweep, tauntaun, unicorn, usb, waterCan, wineGlass];
+var renderedImgs = [];
+var usedArray = [];
 
+
+function newThree() {
+  for (var i = 0; i < 3; i++) {
+    var ranNum = Math.floor(Math.random() * productArray.length);
+    debugger;
+    imageMaker(productArray[ranNum]);
+    var click = document.getElementById(productArray[i].id);
+    click.addEventListener('click', handleClick);
+    usedArray.push(productArray[ranNum]);
+    productArray.splice(ranNum, 1);
   }
-
-var imageMaker = function(obj) {
-  var anchor = document.getElementById('imgs-here');
-  var imageTag = document.createElement('img');
-  imageTag.setAttribute('src', obj.path);
-  imageTag.setAttribute('id', obj.id);
-  anchor.appendChild(imageTag);
-};
-usedArray = [];
-for (var i = 0; i < 3; i++) {
-
-  usedArray.push(renderedImgs[i]);
-  imageMaker(renderedImgs[i]);
 }
+
+function imageMaker(obj) {
+  for (var i = 0; i < 3; i++) {
+    var anchor = document.getElementById('imgs-here');
+    var imageTag = document.createElement('img');
+    imageTag.setAttribute('src', obj.path);
+    imageTag.setAttribute('id', obj.id);
+    anchor.appendChild(imageTag);
+  }
+};
+newThree();
+
+// function usedImages() {
+//   for (i = 0; i < 3; i++) {
+//     var usedAnchor = document.getElementById('img');
+//     usedAnchor.innerText = ' ';
+//   }
+// }
+//
+// function oldToNew() {
+//
+// }
