@@ -1,4 +1,37 @@
 .clickable {
   width: 25%;
   height: 25%;
+  border-radius: 30%;
+  border-style: double;
+  margin-left: 0%;
+  border-width: 50px;
+  vertical-align: center;
+}
+h2 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  margin-top: 1%;
+}
+h1 {
+  font-family: 'Permanent Marker', cursive;
+  text-align: center;
+  font-size: 60px;
+  border-style: double;
+  border-width: 50px;
+  background-color: rgb(31, 168, 224);
+}
+body {
+  background-color: rgb(47, 107, 249);
+}
+hr {
+  width: 50%;
+  border-style: dashed;
+  border-width: 10px;
+}
+ul {
+  font-family: 'Permanent Marker', cursive;
+}
+#secondary {
+  background-color: rgba(171, 171, 171, .8);
+  text-align: center;
 }
